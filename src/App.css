@@ -1,7 +1,18 @@
-.greeting {
+.dark {
   font-size: 10vh;
   font-family: "Blackletter Shadow";
   color: greenyellow;
+}
+
+.light {
+  font-size: 10vh;
+  font-family: "Momoyo";
+  color: pink;
+}
+
+button {
+  padding: 10px;
+  color: antiquewhite;
 }
 
 html,
@@ -13,10 +24,6 @@ body,
   background-color: black;
   color: antiquewhite;
 }
-
-/* p { */
-/* color: antiquewhite; */
-/* } */
 
 .main {
   height: 100vh;

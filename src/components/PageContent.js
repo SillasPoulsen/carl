@@ -1,16 +1,15 @@
-function pagecontent({ project }) {
+function pagecontent({ project, theme }) {
   return (
-    <div className="projectContent" {...project.id}>
-      <h1 className="greeting">{project.title}</h1>
+    <div className="projectContent">
+      <h1 className={theme}>{project.title}</h1>
       <p>{project.subTitle}</p>
       <iframe
         src={project.iframe}
         title={project.id}
         width="640"
-        height="480"
-        frameborder="0"
+        height="400"
+        frameBorder="0"
         allow="autoplay; fullscreen; picture-in-picture"
-        allowfullscreen
       ></iframe>
     </div>
   );

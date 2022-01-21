@@ -4,10 +4,20 @@ import ProjectList from "./components/ProjectList";
 import { useEffect, useState } from "react";
 
 function App() {
+  const [theme, setTheme] = useState("light");
+
+  const themeToggler = () => {
+    theme === "light" ? setTheme("dark") : setTheme("light");
+  };
+
+  useState(() => {
+    setTheme("light");
+  }, [theme]);
+
   return (
     <div className="App">
-      <button>Hello</button>
-      <ProjectList projects={projects} />
+      <button onClick={themeToggler}>🍭</button>
+      <ProjectList projects={projects} theme={theme} />
     </div>
   );
 }

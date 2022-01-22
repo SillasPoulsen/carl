@@ -1,7 +1,7 @@
 function pagecontent({ project, theme }) {
   return (
     <div className="projectContent">
-      <h1 className={theme}>{project.title}</h1>
+      <h1 className={`font${theme}`}>{project.title}</h1>
       <p>{project.subTitle}</p>
       <iframe
         src={project.iframe}

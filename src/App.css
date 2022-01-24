@@ -19,27 +19,26 @@ html,
 body,
 #root,
 .App {
-  height: 100vh;
-  width: 100vw;
-  /* background: rgb(158, 255, 153); */
-  /* background: linear-gradient( */
-  /* 0deg, */
-  /* rgba(158, 255, 153, 0.6713060224089635) 0%, */
-  /* rgba(0, 0, 0, 1) 36% */
-  /* ); */
-  background: rgb(255, 153, 216);
-  background: linear-gradient(
-    0deg,
-    rgba(255, 153, 216, 0.6713060224089635) 0%,
-    rgba(255, 255, 255, 1) 36%
-  );
+  min-height: 100%;
+  width: 100%;
   color: antiquewhite;
 }
 
+.light {
+  /* background: rgb(255, 153, 216); */
+  /* background: linear-gradient( */
+  /* 0deg, */
+  /* rgba(255, 153, 216, 0.6713060224089635) 0%, */
+  /* rgba(255, 255, 255, 1) 36% */
+  /* ); */
+  background-color: #d9afd9;
+  background-image: linear-gradient(0deg, #d9afd9 0%, #97d9e1 100%);
+}
+
 .dark {
-  height: 100vh;
-  width: 100vw;
-  background: rgb(158, 255, 153);
+  /* height: 100vh; */
+  /* width: 100vw; */
+  background: rgb(158, 255, 153) fixed;
   background: linear-gradient(
     0deg,
     rgba(158, 255, 153, 0.6713060224089635) 0%,
@@ -62,9 +61,14 @@ body,
 }
 
 .container {
-  width: 100em;
+  width: 100vw;
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.Logo {
+  font-size: 2em;
+  font-family: "Poppins", sans-serif;
 }

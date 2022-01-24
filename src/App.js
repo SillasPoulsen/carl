@@ -1,5 +1,6 @@
 import "./App.css";
 import ProjectList from "./components/ProjectList";
+import Navbar from "./components/Navbar";
 //import HorizontalScroll from "react-scroll-horizontal";
 import { useEffect, useState } from "react";
 
@@ -16,7 +17,7 @@ function App() {
 
   return (
     <div className={`App ${theme}`}>
-      <button onClick={themeToggler}>🍭</button>
+      <Navbar themeToggler={themeToggler} />
       <ProjectList projects={projects} theme={theme} />
     </div>
   );

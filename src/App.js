@@ -15,7 +15,7 @@ function App() {
   }, [theme]);
 
   return (
-    <div className="App">
+    <div className={`App ${theme}`}>
       <button onClick={themeToggler}>🍭</button>
       <ProjectList projects={projects} theme={theme} />
     </div>

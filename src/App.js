@@ -2,7 +2,7 @@ import "./App.css";
 import ProjectList from "./components/ProjectList";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 function App() {
   const [theme, setTheme] = useState("light");

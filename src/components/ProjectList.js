@@ -1,6 +1,5 @@
 import React from "react";
 import PageContent from "./PageContent";
-import HorizontalScroll from "react-scroll-horizontal";
 
 export default function ProjectList({ projects, theme }) {
   return (

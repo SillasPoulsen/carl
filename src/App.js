@@ -1,7 +1,7 @@
 import "./App.css";
 import ProjectList from "./components/ProjectList";
 import Navbar from "./components/Navbar";
-//import HorizontalScroll from "react-scroll-horizontal";
+import Hero from "./components/Hero";
 import { useEffect, useState } from "react";
 
 function App() {
@@ -17,7 +17,8 @@ function App() {
 
   return (
     <div className={`App ${theme}`}>
-      <Navbar themeToggler={themeToggler} />
+      <Navbar themeToggler={themeToggler} theme={theme} />
+      <Hero theme={theme} />
       <ProjectList projects={projects} theme={theme} />
     </div>
   );
@@ -26,11 +27,9 @@ function App() {
 const projects = [
   {
     id: 1,
-    title: "C a r l P h i l l i p",
-    subTitle:
-      "Audio genius and certified from the Danish Royal Acadamy of Music",
-    iframe:
-      "https://player.vimeo.com/video/349417211?h=c8120feef5?byline=false",
+    title: "Wood Wood",
+    subTitle: "Did the audio for a world wide campaing for Wood Wood x Fila",
+    iframe: "https://player.vimeo.com/video/507724132?h=20b1f98697",
   },
   {
     id: 2,
@@ -43,6 +42,8 @@ const projects = [
     id: 3,
     title: "JavaScript",
     subTitle: "What is v",
+    iframe:
+      "https://player.vimeo.com/video/349417211?h=c8120feef5?byline=false",
   },
   {
     id: 4,

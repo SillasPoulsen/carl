@@ -1,8 +1,24 @@
+@font-face {
+  font-family: "blackletter";
+  src: url("./assets/blacklettersh-webfont.woff2") format("woff2"),
+    url("./assets/blacklettersh-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Momoyo";
+  src: url("./assets/momoyo-webfont.woff2") format("woff2"),
+    url("./assets/momoyo-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
 .fontdark,
 .fontdarkhero {
   font-size: 5em;
   letter-spacing: 0.1em;
-  font-family: "Blackletter Shadow";
+  font-family: "blackletter";
   overflow-wrap: break-word;
   color: greenyellow;
 }
@@ -68,7 +84,7 @@ body,
 }
 
 .container {
-  margin: 50px 0px;
+  margin-top: 50px;
   width: 100vw;
   height: 100%;
   display: flex;
